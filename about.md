@@ -5,7 +5,7 @@ permalink: /about/
 published: true
 ---
 
-[SushiChain](https://github.com/sushichain) is an awesome blockchain written in the Crystal. This blog aims to document and discuss various concepts, ideas and implementations of the SushiChain blockchain.
+[SushiChain](https://github.com/sushichain) is an awesome blockchain written in the [Crystal](https://crystal-lang.org/) programming language. This blog aims to document and discuss various concepts, ideas and implementations of the SushiChain blockchain.
 
 ### Core Developers
 
