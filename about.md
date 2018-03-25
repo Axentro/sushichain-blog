@@ -2,14 +2,16 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
-Some information about you!
+[SushiChain](https://github.com/sushichain) is an awesome blockchain written in the Crystal. This blog aims to document and discuss various concepts, ideas and implementations of the SushiChain blockchain.
 
-### More Information
+### Core Developers
 
-A place to include any other types of information that you'd like to include about yourself.
+* [Taichiro](https://github.com/tbrand)
+* [Kingsley](https://github.com/kingsleyh)
 
-### Contact me
+### Contact us
 
-[email@domain.com](mailto:email@domain.com)
+Come join us in our [Slack channel](https://sushicoin.slack.com/join/shared_invite/enQtMzI4Mjg4ODYxMzE1LTBlN2JhNWU4MWQ0Nzc1OGZhN2MxYjQ4ZmNjNjU2ZGFlZWIwYzMzM2ZjNjBiN2ZjOGNlOTk0NGFmNTE2OWE0NzM)
