@@ -25,7 +25,7 @@ Then we base64 encode the two parts of data to produce our SushiChain address:
 
 I'll probably go into more detail about how our crypto works in a future blog post.
 
-We have recently finished work on our version of ENS. It's called SCARS - SushiChain Address Resolution System. A I mentioned earlier it's built right into the core blockchain. In SCARS we call the name that is mapped to the address a `domain`
+We have recently finished work on our version of ENS. It's called SCARS - SushiChain Address Resolution System. As I mentioned earlier it's built right into the core blockchain. In SCARS we call the name that is mapped to the address a `domain`
 
 So let's take a look at SCARS:
 
@@ -39,7 +39,7 @@ A domain has to be alphanumerics followed by `.sc` and must be between 1 and 20 
 
 You can choose to sell a domain and you can specify the price (in SHARI) that you want for it. And you can decide to cancel the sale if you change your mind before someone else buys it.
 
-
+Currently you can register as many domains as you like against your address. This may change in the future.
 
    
 
