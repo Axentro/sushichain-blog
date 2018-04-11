@@ -10,7 +10,6 @@ description: An awesome blockchain written in Crystal
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/SushiChain/SushiChain/master/imgs/sushichain.png 
-#https://raw.githubusercontent.com/sushichain/jekyll-now/gh-pages/images/sc-logo.png
 
 remote_theme: "mmistakes/minimal-mistakes"
 #
