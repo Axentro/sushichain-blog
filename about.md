@@ -14,4 +14,4 @@ published: true
 
 ### Contact us
 
-Come join us in our [Slack channel](https://goo.gl/MnBKcy)
+Come join us in our [Slack channel](https://join.slack.com/t/sushichain/shared_invite/enQtMzI4Mjg4ODYxMzE1LTBlN2JhNWU4MWQ0Nzc1OGZhN2MxYjQ4ZmNjNjU2ZGFlZWIwYzMzM2ZjNjBiN2ZjOGNlOTk0NGFmNTE2OWE0NzM)
