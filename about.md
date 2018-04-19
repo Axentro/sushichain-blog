@@ -14,4 +14,4 @@ published: true
 
 ### Contact us
 
-Come join us in our [Slack channel](https://bit.ly/2HJBu1z)
+Come join us in our [Slack channel](https://bit.ly/2HJBu1z) and follow us on [Twitter](https://twitter.com/sushichainhq)
