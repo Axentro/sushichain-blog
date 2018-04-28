@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 We have a great feature in the SushiChain command line which applies to all three of the binaries - `sushi`, `sushid` and `sushim`
 
