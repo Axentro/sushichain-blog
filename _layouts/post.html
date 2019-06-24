@@ -2,15 +2,66 @@
 layout: default
 ---
 
+{% assign author = site.authors[page.author] %}
+
+{% if author.gravatar %}
+  {% assign author_image = author.gravatar | append: "?s=100" %}
+{% else %}
+  {% assign author_image = author.avatar %}
+{% endif %}
+
+<!-- Word count -->
+{% capture words %}
+  {{ page.content | number_of_words | minus: 250 }}
+{% endcapture %}
+
 <article class="post">
-  <h1>{{ page.title }}</h1>
+  <h1 class="title">{{ page.title }}</h1>
+
+  <div class="post-meta">
+    <span class="date">
+      Written on {{ page.date | date: "%B %e, %Y" }}
+    </span>
+    <span class="read-time">
+        {% unless words contains "-" %}
+          {{ words | plus: 250 | divided_by: 180 | append: " minute read" }}
+        {% endunless %}
+    </span>
+  </div>
 
   <div class="entry">
     {{ content }}
   </div>
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
+  <div class="author">
+    <div class="profile-image">
+      <img src="{{ author_image }}" alt="avatar">
+    </div>
+    <div class="author-meta">
+      <h3 class="name">{{ author.display_name }}</h3>
+      <p class="bio">
+        {{ author.bio }}
+      </p>
+      <ul class="social">
+        {% if author.github %}
+          <li>
+              <a href="https://github.com/{{ author.github }}">
+                <i class="fab fa-github"></i>
+                {{ author.github }}
+              </a>
+          </li>
+        {% endif %}
+        
+        {% if author.twitter %}
+          <li>
+            <a href="https://twitter.com/{{ author.twitter }}">
+              <i class="fab fa-twitter"></i>
+              {{ author.twitter }}
+            </a>
+          </li>
+        {% endif %}
+      </ul>
+    </div>
   </div>
 
   {% include disqus.html %}

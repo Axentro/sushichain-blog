@@ -2,6 +2,7 @@
 layout: post
 title: Welcome to the blog!
 published: true
+author: kingsleh
 ---
 
 SushiChain is a blockchain written in the [Crystal](https://crystal-lang.org/) programming language. It was founded by [Taichiro Suzuki](https://github.com/tbrand) at the start of 2018.
@@ -15,5 +16,3 @@ After playing around with SushiCoin I instantly loved it! Over the next few mont
 We have pooled our ideas and thoughts on what the most awesome features of our blockchain could be and we have started implementing them.
 
 We are aiming to make a first Mainnet release towards the end of 2018. Over the coming months I will be documenting our progress, discussing my thoughts and ideas about cryptocurrencies and blockchains. If you are lucky Taichiro may also share a blog post or two here :)
-
-Authored by Kingsley Hendrickse

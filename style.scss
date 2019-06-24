@@ -10,17 +10,24 @@
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
+/*   FONTS    */
+/**************/
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+
+/**************/
 /* BASE RULES */
 /**************/
 
 html {
   font-size: 100%;
+  font-family: $roboto;
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+	background: $background;
+  font: 18px/1.4 $roboto;
+  color: $white;
 }
 
 .container {
@@ -31,8 +38,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
+  color: $primary;
   font-weight: bold;
 
   line-height: 1.7;
@@ -69,11 +75,11 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $accent;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $accent;
   }
 }
 
@@ -115,19 +121,14 @@ img {
   max-width: none;
 }
 
-.date {
-  font-style: italic;
-  color: $gray;
-}
-
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
-  background: $lightGray;
+  background: $background;
 }
 ::selection {
   color: $black;
-  background: $lightGray;
+  background: $background;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -156,7 +157,7 @@ img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $background;
 
   @include mobile {
     text-align: center;
@@ -192,9 +193,8 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $white;
   cursor: pointer;
-  font-family: $helveticaNeue;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -202,7 +202,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: $white;
   font-size: 16px;
 
   @include mobile {
@@ -213,7 +213,6 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
   font-size: 18px;
 
   @include mobile {
@@ -225,14 +224,14 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: $white;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: $accent;
     }
   }
 }
@@ -243,7 +242,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $background;
 }
 
 .posts > .post:last-child {
@@ -252,6 +251,22 @@ nav {
 }
 
 .post {
+  .title {
+    margin-bottom: .5rem;
+    line-height: 1;
+  }
+
+  .post-meta {
+    .date, .read-time {
+      font-style: italic;
+      color: $gray;
+    }
+
+    .date {
+      margin-right: 1.5em;
+    }
+  }
+
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
@@ -271,16 +286,78 @@ nav {
   }
 }
 
+.author {
+  margin-top: 3em;
+  display: flex;
+
+  .profile-image {
+    margin-right: 1.5em;
+    flex: 1 0 20%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .author-meta {
+    flex: 1 0 80%;
+
+    .name {
+      margin: 0 0 .8rem 0;
+      font-size: 1.2rem;
+      line-height: 1;
+    }
+
+    .social {
+      padding-left: 0;
+
+      li {
+        list-style-type: none;
+        display: inline-block;
+
+        a {
+          i {
+            margin-right: .8rem;
+          }
+        }
+
+        &:not(:last-child) {
+          margin-right: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  background-color: $background;
 }
 
 footer {
   padding: 20px 0;
   text-align: center;
+
+  .social-links {
+    a {
+      font-size: 1.5rem;
+      margin: 0 .8rem;
+    }
+  }
+}
+
+.fa-twitter {
+  color: $twitter;
+}
+
+.fa-reddit {
+  color: $reddit;
+}
+
+.fa-github {
+  color: $github;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

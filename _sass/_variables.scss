@@ -4,7 +4,15 @@
 //
 
 // Colors
+$primary: #557A56;
+$accent: #B16286;
+$background: #282828;
 $blue: #4183C4;
+
+// Social
+$twitter: #1da1f2;
+$github: #fafafa;
+$reddit: #ff4500;
 
 // Grays
 $black: #000;
@@ -12,12 +20,11 @@ $darkerGray: #222;
 $darkGray: #333;
 $gray: #666;
 $lightGray: #eee;
-$white: #fff;
+$white: #fefefe;
 
 // Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+$roboto: 'Roboto', Helvetica, Arial, sans-serif;
+$montserrat: 'Montserrat', 'Roboto', sans-serif;
 
 // Mobile breakpoints
 @mixin mobile {
