@@ -241,15 +241,34 @@ nav {
 // .main
 //
 
-.posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $background;
+
+
+.posts {
+
+  & > .post {
+    padding-bottom: 2em;
+    border-bottom: 1px solid $background;
+
+    &:last-child {
+      padding-bottom: 1em;
+      border-bottom: none;
+    }
+
+    .entry {
+      padding: 1rem 0;
+    }
+
+    .tags {
+      .tag {
+        color: $primary;
+        vertical-align: middle;
+        margin-left: .8rem;
+      }
+    }
+  }
 }
 
-.posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
-}
+.posts > .post
 
 .post {
   .title {
