@@ -9,13 +9,13 @@ name: SushiChain
 description: The sushi inspired, user friendly blockchain
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/SushiChain/SushiChain/master/imgs/sushichain.png
+avatar: /images/sc-logo.png
 
 # Author information
 authors:
   watzon:
     name: Chris Watson
-    display_name: Chris
+    display_name: Chris Watson
     bio: |
       Chris is a designer and developer with a passion for open source software and sushi.
     avatar: /images/avatars/watzon.png
@@ -25,12 +25,11 @@ authors:
     github: watzon
   kingsleh:
     name: Kingsley Hendrickse
-    display_name: Kingsley
+    display_name: Kingsley Hendrickse
     bio: |
       Highly skilled developer with decades of experience. Expert in Blockchain technology and
       also loves to eat Sushi - which is one of the main reasons he loves working on SushiChain! 
     avatar: /images/avatars/kingsley.png
-    twitter: kingsleh
     github: kingsleh
 
 # remote_theme: "mmistakes/minimal-mistakes"
