@@ -1,5 +1,7 @@
 ---
 published: true
+layout: post
+author: kingsleh
 ---
 We have a great feature in the SushiChain command line which applies to all three of the binaries - `sushi`, `sushid` and `sushim`
 
@@ -35,7 +37,5 @@ sushi tx create -mn 100 -f 1 -a some-address
 ```
 
 This is much shorter and vastly easier to use. We hope you like the config feature and start using it!
-
-Authored by Kingsley Hendrickse
 
 

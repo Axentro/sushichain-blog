@@ -2,6 +2,7 @@
 layout: post
 title: Human readable addresses
 published: true
+author: kingsleh
 ---
 
 Getting involved with blockchain technology and cryptocurrencies has been really fun. But there is one aspect I continue to struggle with and that is my wallet address. For every blockchain I have a long and complicated wallet address e.g. Neo, Lisk, Bitcoin to name a few.
@@ -41,11 +42,3 @@ You can choose to sell a domain and you can specify the price (in SHARI) that yo
 
 Currently you can register as many domains as you like against your address. This may change in the future.
 
-   
-
-
-
-
-
-
-Authored by Kingsley Hendrickse

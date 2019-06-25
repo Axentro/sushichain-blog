@@ -9,10 +9,18 @@ layout: default
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
       <div class="entry">
-        {{ post.excerpt }}
+        {{ post.excerpt | | strip_html | strip }}... <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">read more</a>
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      {% if post.tags.first %}
+        <div class="tags">
+            Tagged: 
+            {% for tag in post.tags %}
+              <span class="tag">{{ tag }}</span>
+            {% endfor %}
+        </div>
+      {% endif %}
+
     </article>
   {% endfor %}
 </div>

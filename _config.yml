@@ -6,12 +6,33 @@
 name: SushiChain
 
 # Short bio or description (displayed in the header)
-description: An awesome blockchain written in Crystal
+description: The sushi inspired, user friendly blockchain
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/SushiChain/SushiChain/master/imgs/sushichain.png 
+avatar: /images/sc-logo.png
 
-remote_theme: "mmistakes/minimal-mistakes"
+# Author information
+authors:
+  watzon:
+    name: Chris Watson
+    display_name: Chris Watson
+    bio: |
+      Chris is a designer and developer with a passion for open source software and sushi.
+    avatar: /images/avatars/watzon.png
+    email: chris@watzon.me
+    web: https://watzon.me
+    twitter: _watzon
+    github: watzon
+  kingsleh:
+    name: Kingsley Hendrickse
+    display_name: Kingsley Hendrickse
+    bio: |
+      Highly skilled developer with decades of experience. Expert in Blockchain technology and
+      also loves to eat Sushi - which is one of the main reasons he loves working on SushiChain! 
+    avatar: /images/avatars/kingsley.png
+    github: kingsleh
+
+# remote_theme: "mmistakes/minimal-mistakes"
 #
 # Flags below are optional
 #
@@ -28,10 +49,10 @@ footer-links:
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: sushichainhq
+  reddit: sushichain
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
-
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
@@ -56,6 +77,8 @@ baseurl: ""
 
 permalink: /:title/
 
+excerpt_separator: <!--more-->
+
 # The release of Jekyll Now that you're using
 version: v1.2.0
 
@@ -74,9 +97,10 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
-gems:
+plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-mentions
 
 # Exclude these files from your production _site
 exclude:
